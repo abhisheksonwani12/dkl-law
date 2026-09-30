@@ -1,0 +1,109 @@
+'use client';
+
+import Image from 'next/image';
+import Link from 'next/link';
+import { getArticleBySlug, getBlogBySlug, getArticlesByCategory } from '@/lib/blogs';
+import { useParams } from 'next/navigation';
+
+export default function ArticlePage() {
+  const params = useParams()
+  const category = params.category as string
+  const slug = params.slug as string
+
+  const blog = getBlogBySlug(category)
+  const article = getArticleBySlug(slug)
+
+  if (!article || !blog) {
+    return (
+      <main className="bg-gray-50 min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-3xl font-bold text-gray-900 mb-4">Article not found</h1>
+          <Link href="/" className="text-blue-600 hover:underline">
+            Back to home
+          </Link>
+        </div>
+      </main>
+    )
+  }
+
+  return (
+    
+    <main className="bg-white min-h-screen">
+      
+      {/* Header */}
+      <header className="sticky top-0 bg-white z-10 md:mt-10 border-b border-gray-100">
+        <div className="max-w-4xl mx-auto md:ml-[7%] px-4 md:px-8 py-3">
+          <Link
+            href="/resources"
+            className="text-sm text-gray-600 hover:text-gray-900 mb-4 inline-block"
+          >
+            ← Back to {blog.name}
+          </Link>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-medium text-gray-800 mb-3 md:mb-4 leading-snug">
+            {article.title}
+          </h1>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 text-xs sm:text-sm text-gray-600">
+            <span>
+              POSTED ON <span className="font-bold">{article.date.toUpperCase()}</span>
+            </span>
+            <span>
+              BY  <span className="font-bold">{article.author.toUpperCase()}</span>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 md:py-8 grid grid-cols-1 lg:grid-cols-[3fr_1fr] gap-6 md:gap-8">
+        <div>
+          
+          {/* Hero Image */}
+          <div className="relative h-56 sm:h-72 md:h-[500px] overflow-hidden mb-6 md:mb-8">
+            <Image
+              src={article.image || "/placeholder.svg"}
+              alt={article.title}
+              fill
+              className="object-cover"
+            />
+          </div>
+
+          {/* Article Content */}
+          <article className="max-w-4xl px-0 md:px-0 pb-16">
+            <div className="prose prose-base sm:prose-lg max-w-none text-gray-700 leading-relaxed">
+              <div className="whitespace-pre-line">{article.content}</div>
+            </div>
+          </article>
+        </div>
+
+        <aside className="space-y-4 mt-8 lg:mt-0">
+          <h3 className="text-lg font-semibold text-gray-900 border-b border-[#9c0101] pb-2">
+            Next Reads
+          </h3>
+
+          {getArticlesByCategory(category)
+            .filter(a => a.slug !== slug)
+            .slice(0, 4)
+            .map(article => (
+              <Link
+                key={article.id}
+                href={`/blog/${category}/article/${article.slug}`}
+                className="flex gap-3 border border-[#9c0101] p-2 sm:p-3 hover:bg-gray-50 transition"
+              >
+                <div className="relative w-20 h-16 shrink-0">
+                  <Image
+                    src={article.image || '/placeholder.svg'}
+                    alt={article.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <p className="text-sm font-medium text-gray-900 leading-snug line-clamp-3">
+                  {article.title}
+                </p>
+              </Link>
+            ))}
+        </aside>
+      </div>
+    </main>
+
+  );
+}
