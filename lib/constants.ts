@@ -46,6 +46,11 @@ export const offices: Record<string, OfficeState> = {
             name: "Mumbai – FIFC",
             address: "Level 1, FIFC, BKC, Mumbai",
             map: "https://www.google.com/maps/search/?api=1&query=FIFC+BKC+Mumbai"
+        },
+        {
+            name: "Mumbai – Nariman Point",
+            address: "414, Raheja Chambers, Free Press Journal Marg, Nariman Point – 400021",
+            map: "https://www.google.com/maps/search/?api=1&query=414+Raheja+Chambers+Free+Press+Journal+Marg+Nariman+Point+Mumbai+400021"
         }
         ]
     },

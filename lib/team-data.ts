@@ -291,13 +291,6 @@ export const advocatePartners = [
     image: '/team-members/Shoumya Sahu.png',
     description: 'Supports complex transactional mandates with a strong blend of legal analysis and technical understanding.',
   },
-  // {
-  // id: '5',
-  // name: 'Akhilesh Nair',
-  // title: 'Legal Associate',
-  // image: '/team-members/Akhilesh Nair.png',
-  // description: 'Handles litigation and advisory work related to real estate and infrastructure projects with a detail‑oriented approach.',
-  // },
   {
     id: '5',
     name: 'Bismit Nayak',

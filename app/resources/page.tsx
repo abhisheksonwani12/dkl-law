@@ -56,79 +56,52 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Featured Section with Sidebar */}
-      <div className="flex flex-col lg:flex-row gap-8 p-6 md:p-8 lg:p-12">
+      {/* Articles Coming Soon State */}
+      {selectedBlog === 'legal' && (
+        <div className="px-6 md:px-8 lg:px-12 py-12 md:py-20 flex justify-center">
+          <div className="w-full max-w-4xl bg-white/95 backdrop-blur-sm border border-[#9c0101]/30 shadow-lg p-8 sm:p-12 md:p-16 text-center relative overflow-hidden">
+            {/* Top accent bar */}
+            <div className="absolute top-0 left-0 right-0 h-1.5 bg-[#9c0101]" />
 
-        {/* Sidebar */}
-        <aside className="shrink-0 w-full lg:w-80">
-          <div
-            className={`bg-[#9c0101] ${currentBlog?.color} text-white w-full lg:h-full flex flex-col items-center justify-center lg:sticky lg:top-8 p-4 md:p-6 font-[marcellus] text-center`}
-          >
-            <h2 className="text-2xl lg:text-3xl font-bold mb-1 lg:mb-2">{currentBlog?.name}</h2>
-            <p className="text-xs lg:text-sm opacity-90 leading-normal">{currentBlog?.description}</p>
-          </div>
-        </aside>
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-[#9c0101] border border-[#9c0101]/30 bg-[#9c0101]/5 font-serif font-semibold mb-6">
+              Legal Insights & Publications
+            </div>
 
-        {/* Featured Article */}
-        {featuredArticle ? (
-          <div className="flex-1">
-            <Link href={`/blog/${selectedBlog}/article/${featuredArticle.slug}`} className="block">
-              <div className="relative h-72 sm:h-80 md:h-[300px] border border-[#9c0101] p-2 overflow-hidden group cursor-pointer">
-                <div className="relative h-full w-full overflow-hidden">
-                  <Image
-                    src={featuredArticle.image || '/placeholder.svg'}
-                    alt={featuredArticle.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+            <h3 className="text-3xl sm:text-4xl md:text-5xl font-serif text-[#111f2d] font-normal tracking-wide mb-4" style={{ fontFamily: 'Times New Roman, Times, serif' }}>
+              COMING SOON
+            </h3>
 
-                  {/* Overlay */}
-                  <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent"></div>
+            {/* Ornamental Divider */}
+            <div className="flex items-center justify-center gap-4 my-6">
+              <div className="h-[1px] w-12 sm:w-20 bg-[#9c0101]" />
+              <span className="text-[#9c0101] text-xs">&#9670;</span>
+              <div className="h-[1px] w-12 sm:w-20 bg-[#9c0101]" />
+            </div>
 
-                  {/* Content */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white">
-                    <p className="text-xs md:text-sm mb-2 md:mb-3 text-gray-200">{featuredArticle.date}</p>
-                    <h3 className="text-lg sm:text-xl md:text-3xl leading-tight text-balance">
-                      {featuredArticle.title}
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </Link>
-          </div>
-        ) : null}
-      </div>
+            <p className="text-gray-700 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-4" style={{ fontFamily: 'Times New Roman, Times, serif' }}>
+              Our advocates and practice leads are curating comprehensive legal analyses, commentaries on landmark judicial decisions, and regulatory insights across our core practice areas.
+            </p>
 
-      {/* Grid of Other Articles - Full Width */}
-      {otherArticles.length > 0 && (
-        <div className="px-6 md:px-8 lg:px-12 pb-12 overflow-hidden">
-          <div className="flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scrollbar-none md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-4 md:pb-0">
-            {otherArticles.map((article) => (
+            <p className="text-xs sm:text-sm uppercase tracking-widest text-[#9c0101] font-semibold mb-10" style={{ fontFamily: 'Times New Roman, Times, serif' }}>
+              Publications will be available shortly
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
-                key={article.id}
-                href={`/blog/${selectedBlog}/article/${article.slug}`}
-                className="shrink-0 w-[80vw] xs:w-[280px] snap-center md:shrink md:w-auto md:snap-none"
+                href="/practice-areas"
+                className="w-full sm:w-auto px-7 py-3 uppercase text-xs md:text-sm font-semibold tracking-widest border border-[#9c0101] text-white bg-[#9c0101] hover:bg-[#7e0000] transition-colors"
+                style={{ fontFamily: 'Times New Roman, Times, serif' }}
               >
-                <div className="relative h-[220px] sm:h-60 md:h-[260px] lg:h-[280px] border border-[#9c0101] p-2 overflow-hidden group cursor-pointer">
-                  <div className="relative h-full w-full overflow-hidden">
-                    <Image
-                      src={article.image || '/placeholder.svg'}
-                      alt={article.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent"></div>
-
-                    <div className="absolute top-2 left-2 right-2 bottom-2 flex flex-col justify-between text-white p-2">
-                      <p className="text-[10px] sm:text-[11px] md:text-xs text-gray-200">{article.date}</p>
-                      <h3 className="text-sm sm:text-base md:text-lg leading-tight text-balance line-clamp-3">
-                        {article.title}
-                      </h3>
-                    </div>
-                  </div>
-                </div>
+                Explore Practice Areas
               </Link>
-            ))}
+              <Link
+                href="/#our-offices"
+                className="w-full sm:w-auto px-7 py-3 uppercase text-xs md:text-sm font-semibold tracking-widest border border-[#9c0101] text-[#9c0101] bg-white hover:bg-[#9c0101] hover:text-white transition-colors"
+                style={{ fontFamily: 'Times New Roman, Times, serif' }}
+              >
+                Our Offices
+              </Link>
+            </div>
           </div>
         </div>
       )}

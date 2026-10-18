@@ -13,6 +13,31 @@ export default function ArticlePage() {
   const blog = getBlogBySlug(category)
   const article = getArticleBySlug(slug)
 
+  if (category === 'legal') {
+    return (
+      <main className="bg-white min-h-screen py-20 px-6 flex items-center justify-center">
+        <div className="max-w-2xl w-full bg-[#fdfbf9] border border-[#9c0101]/30 p-8 sm:p-12 text-center shadow-md relative">
+          <div className="absolute top-0 left-0 right-0 h-1.5 bg-[#9c0101]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 text-xs uppercase tracking-[0.25em] text-[#9c0101] border border-[#9c0101]/30 bg-[#9c0101]/5 font-serif font-semibold mb-6">
+            Articles & Publications
+          </div>
+          <h1 className="text-3xl sm:text-4xl font-serif text-[#111f2d] mb-4" style={{ fontFamily: 'Times New Roman, Times, serif' }}>
+            COMING SOON
+          </h1>
+          <p className="text-gray-600 mb-8 leading-relaxed" style={{ fontFamily: 'Times New Roman, Times, serif' }}>
+            This publication is currently in editorial preparation and will be available shortly.
+          </p>
+          <Link
+            href="/resources"
+            className="inline-block px-7 py-3 uppercase text-xs font-semibold tracking-widest border border-[#9c0101] text-white bg-[#9c0101] hover:bg-[#7e0000] transition-colors"
+          >
+            Back to Resources
+          </Link>
+        </div>
+      </main>
+    );
+  }
+
   if (!article || !blog) {
     return (
       <main className="bg-gray-50 min-h-screen flex items-center justify-center">
@@ -23,7 +48,7 @@ export default function ArticlePage() {
           </Link>
         </div>
       </main>
-    )
+    );
   }
 
   return (
