@@ -22,7 +22,7 @@ export default function TeamSection() {
     <section
       id='our-team'
       className="py-10 md:py-16 px-3 md:px-4 text-[#9c0101] bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/bg-our-team.png')", }}
+      style={{ backgroundImage: "url('/bg-our-team.webp')", }}
     >
         <div className="flex flex-col items-center gap-1 mb-12">
           <div className="flex items-center gap-6 w-full justify-center mb-1">

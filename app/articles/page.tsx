@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Articles & Insights | DKL Advocates',
+  title: 'Articles and Insights | DKL Advocates',
   description: 'Publications, legal commentaries, and thought leadership from DKL Advocates.',
 };
 
@@ -10,7 +10,7 @@ export default function ArticlesPage() {
     <main className="bg-gray-50 min-h-screen">
       <div
         className="relative bg-fixed bg-center bg-cover min-h-screen py-16"
-        style={{ backgroundImage: "url('/bg-resources.png')" }}
+        style={{ backgroundImage: "url('/bg-resources.webp')" }}
       >
         <div
           className="flex flex-col items-center gap-1 mt-8 mb-10"
@@ -20,7 +20,7 @@ export default function ArticlesPage() {
           <div className="flex items-center gap-6 w-full justify-center mb-1">
             <div className="h-0.5 w-12 md:w-24 bg-[#9c0101] rounded" />
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-serif text-[#111f2d] font-normal tracking-normal text-center px-2 whitespace-nowrap">
-              ARTICLES & INSIGHTS
+              ARTICLES AND INSIGHTS
             </h1>
             <div className="h-0.5 w-12 md:w-24 bg-[#9c0101] rounded" />
           </div>
@@ -36,7 +36,7 @@ export default function ArticlesPage() {
             <div className="absolute top-0 left-0 right-0 h-1.5 bg-[#9c0101]" />
 
             <div className="inline-flex items-center gap-2 px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-[#9c0101] border border-[#9c0101]/30 bg-[#9c0101]/5 font-serif font-semibold mb-6">
-              Legal Insights & Publications
+              Legal Insights and Publications
             </div>
 
             <h2

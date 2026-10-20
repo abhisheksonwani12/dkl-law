@@ -32,7 +32,7 @@ export default function Blog() {
           <div className="absolute top-0 left-0 right-0 h-1.5 bg-[#9c0101]" />
 
           <div className="inline-flex items-center gap-2 px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-[#9c0101] border border-[#9c0101]/30 bg-[#9c0101]/5 font-serif font-semibold mb-6">
-            Articles & Publications
+            Articles and Publications
           </div>
 
           <h3

@@ -107,7 +107,7 @@ export default function PeoplePage() {
 
       <div
         className="relative bg-fixed bg-center bg-cover"
-        style={{ backgroundImage: "url('/bg-team-member.png')" }}
+        style={{ backgroundImage: "url('/bg-team-member.webp')" }}
       >
 
         {/* Scrolling content */}

@@ -3,7 +3,7 @@ export default function PeopleHero() {
 
     <div
       className="relative min-h-screen bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center px-4 py-20 overflow-hidden"
-      style={{ backgroundImage: "url('/bg-team.png')" }}
+      style={{ backgroundImage: "url('/bg-team.webp')" }}
     >
       
       <div className="relative z-10 font-['Times_New_Roman']">

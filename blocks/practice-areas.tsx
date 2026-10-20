@@ -40,7 +40,7 @@ export default function PracticeAreaSection() {
   };
 
   return (
-    <section id="expertise" className="py-10 px-3 md:py-20 bg-[#f4f7fa] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('/bg-practice-area.png')` }}>
+    <section id="expertise" className="py-10 px-3 md:py-20 bg-[#f4f7fa] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('/bg-practice-area.webp')` }}>
       <div className="max-w-7xl mx-auto">
 
         {/* HEADER */}
@@ -110,7 +110,7 @@ export default function PracticeAreaSection() {
                     md:opacity-0 md:max-h-0 md:translate-y-4 md:group-hover:opacity-100 md:group-hover:max-h-96 md:group-hover:translate-y-0`}
             >
               <li>Public Market Transactions</li>
-              <li>Contral Transactions</li>
+              <li>Contractual Practices</li>
               <li>Financial Regulatory Practices</li>
               <li>Incubation Practice</li>
             </ul>
@@ -133,8 +133,8 @@ export default function PracticeAreaSection() {
                     md:opacity-0 md:max-h-0 md:translate-y-4 md:group-hover:opacity-100 md:group-hover:max-h-96 md:group-hover:translate-y-0`}
             >
               <li>Strategic Corporate Structuring</li>
-              <li>Regulatory & Governance Strategy</li>
-              <li>Risk, Innovation & Emerging Business Models</li>
+              <li>Regulatory and Governance Strategy</li>
+              <li>Risk, Innovation and Emerging Business Models</li>
             </ul>
           </div>
 

@@ -18,6 +18,12 @@ export default function SideNav() {
 
   useEffect(() => {
     const handleScroll = () => {
+      // Default to "Home" when at or near the top of the page unless explicitly anchored to another section
+      if (window.scrollY < 200 && (!window.location.hash || window.location.hash === "#" || window.location.hash === "#home")) {
+        setActiveSection("home");
+        return;
+      }
+
       navItems.forEach((item) => {
         if (!item.sectionId) return;
         const el = document.getElementById(item.sectionId);

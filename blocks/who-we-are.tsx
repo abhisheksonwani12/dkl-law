@@ -3,7 +3,7 @@ export default function WhoWeAre() {
       <section
         id="about"
         className="py-12 px-4 md:py-20 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/bg-who-we-are.png')" }}
+        style={{ backgroundImage: "url('/bg-who-we-are.webp')" }}
       >
         <div className="max-w-7xl mx-auto mb-40">
 
@@ -22,24 +22,24 @@ export default function WhoWeAre() {
           style={{ fontFamily: 'Times New Roman, Times, serif' }}>
             <p className="hidden md:block mb-4">
               We are not, and do not strive to be the largest law firm measured by number of offices or lawyers.
-              Our goal is to be the firm of choice for clients with respect to their most challenging legal issues, most significant business transactions & most critical disputes.
+              Our goal is to be the firm of choice for clients with respect to their most challenging legal issues, most significant business transactions and most critical disputes.
             </p>
             <p className="hidden md:block mb-4">
               We specialize in advising listed corporations and financial conglomerates domiciled in India.
             </p>
             <p className="hidden md:block mb-4">
-              We advise our clients on commercial arbitration, public market transactions, financial regulatory matters, corporate governance advisory, investment funds, regulatory representations (contentious & otherwise) before financial service regulators of India disputes before the courts of Maharashtra & NCT of Delhi.
+              We advise our clients on commercial arbitration, public market transactions, financial regulatory matters, corporate governance advisory, investment funds, regulatory representations (contentious and otherwise) before Financial Services Regulators of India and disputes before the Courts of Maharashtra and NCT of Delhi.
             </p>
 
             <p className="md:hidden mb-4">
               We are not, and do not strive to be the largest law firm measured by number of offices or lawyers.
-              Our goal is to be the firm of choice for clients with respect to their most challenging legal issues, most significant business transactions & most critical disputes.
+              Our goal is to be the firm of choice for clients with respect to their most challenging legal issues, most significant business transactions and most critical disputes.
             </p>
             <p className="md:hidden mb-4">
               We specialize in advising listed corporations and financial conglomerates domiciled in India.
             </p>
             <p className="md:hidden mb-4">
-              We advise our clients on commercial arbitration, public market transactions, financial regulatory matters, corporate governance advisory, investment funds, regulatory representations (contentious & otherwise) before financial service regulators of India disputes before the courts of Maharashtra & NCT of Delhi.
+              We advise our clients on commercial arbitration, public market transactions, financial regulatory matters, corporate governance advisory, investment funds, regulatory representations (contentious and otherwise) before Financial Services Regulators of India and disputes before the Courts of Maharashtra and NCT of Delhi.
             </p>
           </div>
 

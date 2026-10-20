@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from 'react';
 import { TeamMember } from '@/lib/team-data';
 import { Mail, Download, MapPin } from 'lucide-react';
 import Link from 'next/link';
@@ -8,41 +7,11 @@ interface MemberHeaderProps {
 }
 
 export default function MemberHeader({ member }: MemberHeaderProps) {
-  const containerRef = useRef<HTMLDivElement | null>(null);
-  const imageWrapperRef = useRef<HTMLDivElement | null>(null);
-  const [isFixed, setIsFixed] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!containerRef.current) return;
-
-      const containerTop = containerRef.current.offsetTop;
-      const scrollY = window.scrollY;
-
-      if (scrollY >= containerTop) {
-        setIsFixed(true);
-      } else {
-        setIsFixed(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <div
-      ref={containerRef}
-      className="flex flex-col md:flex-row min-h-screen bg-surface relative"
-    >
+    <div className="flex flex-col md:flex-row min-h-screen bg-surface relative">
       {/* Left side - Photo */}
       <div className="w-full md:w-[45%] relative">
-        <div
-          ref={imageWrapperRef}
-          className={`w-full  flex justify-center mb-6 md:mb-0 ${
-            isFixed ? 'md:fixed md:top-0 md:w-[45%]' : ''
-          }`}
-        >
+        <div className="w-full flex justify-center mb-6 md:mb-0">
           <img
             src={member.image || "/placeholder.svg"}
             alt={member.name}

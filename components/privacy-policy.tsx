@@ -26,7 +26,7 @@ export default function PrivacyPolicy() {
         <p className="mb-4">This policy may be updated from time to time. Any material changes will be published on the website.</p>
 
         <h2 className="text-xl font-serif font-bold text-[#9c0101] mt-6 mb-2"> Your Queries</h2>
-        <p className="mb-4">For any request related to your personal data write to hr@dkl.law. We may verify identity before processing requests.</p>
+        <p className="mb-4">For any request related to your personal data, please contact us. We may verify identity before processing requests.</p>
 
       </div>
 

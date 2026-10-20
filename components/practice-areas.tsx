@@ -20,7 +20,7 @@ export default function PracticeArea() {
     <section
       id="expertise"
       className="py-12 px-4 md:py-20 bg-cover bg-center bg-no-repeat bg-fixed relative"
-      style={{ backgroundImage: "url('/bg-practice-area.png')" }}
+      style={{ backgroundImage: "url('/bg-practice-area.webp')" }}
     >
       <div className="absolute inset-0 bg-white/10"></div>
       <div className="max-w-7xl mx-auto relative z-10">
@@ -43,7 +43,7 @@ export default function PracticeArea() {
         {/* TAB MENU */}
         <div className="w-full mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-[250px_1fr] gap-0">
-            <div className="w-full md:w-[260px] flex flex-col gap-0 mt-4 md:mt-20 self-stretch">
+            <div className="w-full md:w-[260px] flex flex-col gap-0 mt-4 md:mt-20 md:sticky md:top-28 md:self-start">
               {[
                 "Contentious Practice",
                 "Corporate Practice",
@@ -68,7 +68,7 @@ export default function PracticeArea() {
             </div>
 
             {/* CONTENT AREA */}
-            <div className="bg-white shadow-2xl rounded-lg px-8 pt-8 pb-8 transition-all duration-500 border border-[#9c0101] mt-0 md:-mt-10 h-[90vh] overflow-y-auto">
+            <div className="bg-white shadow-2xl rounded-lg px-8 pt-8 pb-8 transition-all duration-500 border border-[#9c0101] mt-0 md:-mt-10 min-h-[500px]">
 
               {/* CONTENTIOUS PRACTICE */}
               {activeTab === "Contentious Practice" && (
@@ -94,13 +94,13 @@ export default function PracticeArea() {
 
                         <li className="p-4 mb-4 bg-[#fff7f7] rounded-xl border border-red-100 shadow-sm flex flex-col gap-2 transition-all duration-300 hover:shadow-lg hover:shadow-red-200 hover:-translate-y-1"><strong className="ml-1">Hon'ble High Court of Bombay and Hon'ble High Court of Delhi</strong>
                           <p className="text-sm text-[#666] ml-1 mt-1">
-                            Advising a NBFC with respect to commercial disputes pending before HC of Bombay and Delhi in aggregate amounting to ₹4,150 crores.
+                            Advising an NBFC with respect to commercial disputes pending before HC of Bombay and Delhi in aggregate amounting to ₹4,150 crores.
                           </p>
                         </li>
 
-                        <li className="p-4 mb-4 bg-[#fff7f7] rounded-xl border border-red-100 shadow-sm flex flex-col gap-2 transition-all duration-300 hover:shadow-lg hover:shadow-red-200 hover:-translate-y-1"><strong className="ml-1">National Company Law Tribunal (NCLT) & National Company Law Appellate Tribunal (NCLAT)</strong>
+                        <li className="p-4 mb-4 bg-[#fff7f7] rounded-xl border border-red-100 shadow-sm flex flex-col gap-2 transition-all duration-300 hover:shadow-lg hover:shadow-red-200 hover:-translate-y-1"><strong className="ml-1">National Company Law Tribunal (NCLT) and National Company Law Appellate Tribunal (NCLAT)</strong>
                           <p className="text-sm text-[#666] ml-1 mt-1">
-                            Advising a NBFC with respect to recovery proceedings pending before Debt Recovery Tribunal in aggregate amounting to ₹450 crores.
+                            Advising an NBFC with respect to recovery proceedings pending before Debt Recovery Tribunal in aggregate amounting to ₹450 crores.
                           </p>
                         </li>
 
@@ -136,7 +136,7 @@ export default function PracticeArea() {
 
                         <li className="p-4 mb-4 mr-4 bg-[#fff7f7] rounded-xl border border-red-100 shadow-sm flex flex-col gap-2 transition-all duration-300 hover:shadow-lg hover:shadow-red-200 hover:-translate-y-1"><strong className="ml-1">Domestic Arbitration</strong>
                           <p className="text-sm text-[#666] ml-1 mt-1">
-                            Representing clients in commercial arbitration proceedings globally.
+                            Representing clients in domestic commercial arbitration proceedings.
                           </p>
                         </li>
 
@@ -374,7 +374,7 @@ export default function PracticeArea() {
                         </div>
 
                         <div className="p-4 bg-[#fff7f7] rounded-xl border border-red-100 shadow-sm transition-all duration-300 hover:shadow-lg hover:shadow-red-200 hover:-translate-y-1">
-                          <strong>Privacy & Data Security</strong>
+                          <strong>Privacy and Data Security</strong>
                           <p className="text-sm text-[#666] mt-2">
                             Drafting privacy policies, managing data protection compliance, conducting risk assessments, and advising on cybersecurity governance frameworks.
                           </p>
@@ -388,7 +388,7 @@ export default function PracticeArea() {
                       </div> */}
 
                         <div className="p-4 bg-[#fff7f7] rounded-xl border border-red-100 shadow-sm transition-all duration-300 hover:shadow-lg hover:shadow-red-200 hover:-translate-y-1">
-                          <strong>Taxation & Customs</strong>
+                          <strong>Taxation and Customs</strong>
                           <p className="text-sm text-[#666] mt-2">
                             Advising clients on direct and indirect tax structures, cross-border taxation, customs duties, and compliance strategies to minimize regulatory exposure.
                           </p>
@@ -431,7 +431,7 @@ export default function PracticeArea() {
                       </h4>
                       <ul className="list-disc list-inside space-y-3">
                         <li className="p-4 mb-4 bg-[#fff7f7] rounded-xl border border-red-100 shadow-sm flex flex-col gap-2 transition-all duration-300 hover:shadow-lg hover:shadow-red-200 hover:-translate-y-1">
-                          <strong className="ml-1">Business Structuring & Reorganization</strong>
+                          <strong className="ml-1">Business Structuring and Reorganization</strong>
                           <p className="text-sm text-[#666] ml-1 mt-1">
                             Designing optimal corporate structures aligned with commercial strategy, regulatory positioning, and operational efficiency.
                           </p>
@@ -457,7 +457,7 @@ export default function PracticeArea() {
                     <div className="p-0">
                       <h4 className="text-xl font-semibold text-[#111f2d] mt-6 mb-3 flex items-center gap-2">
                         <ShieldCheck className="w-5 h-5 text-[#9c0101]" />
-                        Regulatory & Governance Strategy
+                        Regulatory and Governance Strategy
                       </h4>
                       <ul className="list-disc list-inside space-y-3">
                         <li className="p-4 mb-4 bg-[#fff7f7] rounded-xl border border-red-100 shadow-sm flex flex-col gap-2 transition-all duration-300 hover:shadow-lg hover:shadow-red-200 hover:-translate-y-1">
@@ -483,11 +483,11 @@ export default function PracticeArea() {
                       </ul>
                     </div>
 
-                    {/* Risk & Innovation */}
+                    {/* Risk and Innovation */}
                     <div className="p-0">
                       <h4 className="text-xl font-semibold text-[#111f2d] mt-6 mb-3 flex items-center gap-2">
                         <Sparkles className="w-5 h-5 text-[#9c0101]" />
-                        Risk, Innovation & Emerging Business Models
+                        Risk, Innovation and Emerging Business Models
                       </h4>
                       <ul className="list-disc list-inside space-y-3">
                         <li className="p-4 mb-4 bg-[#fff7f7] rounded-xl border border-red-100 shadow-sm flex flex-col gap-2 transition-all duration-300 hover:shadow-lg hover:shadow-red-200 hover:-translate-y-1">

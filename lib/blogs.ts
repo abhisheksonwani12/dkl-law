@@ -46,7 +46,7 @@ export const articles: Article[] = [
     title: 'How Do Courts React to the Disrepute of Summons?',
     description: 'An analysis of how Indian courts enforce summons and address non‑appearance in civil and criminal proceedings.',
     image: 'https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=1200&h=800&fit=crop',
-    author: 'Ridhi Seth & Lakshya Bhatia',
+    author: 'Ridhi Seth and Lakshya Bhatia',
     category: 'legal',
     content: `A summons is a legal instrument issued by courts to notify a person of legal proceedings and compel their appearance. It originates from the principle of Audi Alteram Partem, meaning the right to be heard. Summons ensure that defendants, witnesses, or relevant parties appear before the court or produce necessary documents.
 
@@ -106,7 +106,7 @@ Strategic legal planning minimizes financial exposure and preserves business rel
     title: "The DPDP Act, 2023: Navigating India's New Data Protection Era",
     description: 'An overview of compliance requirements and rights under India\'s Digital Personal Data Protection Act.',
     image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop',
-    author: 'Bismit Nayak & Shoumya Sahu',
+    author: 'Bismit Nayak and Shoumya Sahu',
     category: 'legal',
     content: `The Digital Personal Data Protection (DPDP) Act, 2023, marks a paradigm shift in how digital personal data is processed in India. Grounded in principles of consent, purpose limitation, and data minimization, the Act places significant obligations on "Data Fiduciaries" while empowering "Data Principals" with distinct rights.
 
@@ -121,7 +121,7 @@ Non‑compliance carries substantial financial penalties, making it imperative f
     title: "Understanding SEBI's Prohibition of Insider Trading Regulations",
     description: 'A guide to the legal framework governing insider trading and prevention of market abuse in India.',
     image: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=800&h=600&fit=crop',
-    author: 'Abhinav Kalia & Lakshya Bhatia',
+    author: 'Abhinav Kalia and Lakshya Bhatia',
     category: 'legal',
     content: `The Securities and Exchange Board of India (Prohibition of Insider Trading) Regulations form a critical component of public market integrity. The regulations prohibit the communication or trading of Unpublished Price Sensitive Information (UPSI) by insiders, ensuring a level playing field for all investors.
 
@@ -136,7 +136,7 @@ Enforcement actions by SEBI have grown increasingly rigorous, utilizing digital 
     title: 'The Evolving Landscape of Insolvency Resolution under the IBC',
     description: 'Analyzing trends, challenges, and recent developments in corporate insolvency under the Insolvency and Bankruptcy Code.',
     image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop',
-    author: 'Devesh Dubey & Devesh Khara',
+    author: 'Devesh Dubey and Devesh Khara',
     category: 'legal',
     content: `The Insolvency and Bankruptcy Code (IBC), 2016, revolutionized debt restructuring and resolution in India by introducing a creditor-in-control model. The primary objective remains the maximization of value of assets of corporate debtors through timely resolution processes.
 
@@ -151,7 +151,7 @@ Despite challenges such as infrastructural bottlenecks and litigation delays, th
     title: "Institutionalizing Arbitration: India's Push as a Dispute Resolution Hub",
     description: 'How recent amendments and institutional structures are shifting India\'s commercial dispute resolution landscape.',
     image: 'https://images.unsplash.com/photo-1473186578172-c141e6798cf4?w=800&h=600&fit=crop',
-    author: 'Devesh Dubey & Abhinav Kalia',
+    author: 'Devesh Dubey and Abhinav Kalia',
     category: 'legal',
     content: `India's commercial landscape is actively embracing institutional arbitration to resolve commercial disputes efficiently. The Arbitration and Conciliation Act has undergone key amendments to ensure minimal judicial intervention, strict timelines for passing awards, and enforcement of interim measures.
 
@@ -166,7 +166,7 @@ Transitioning from ad-hoc arbitration to institutional arbitration is essential 
     title: 'Structuring Alternative Investment Funds in India',
     description: 'A detailed look at the regulatory framework, categories, and setup processes for AIFs under SEBI.',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
-    author: 'Devesh Khara & Lakshya Bhatia',
+    author: 'Devesh Khara and Lakshya Bhatia',
     category: 'legal',
     content: `Alternative Investment Funds (AIFs) have emerged as a preferred investment vehicle for domestic and global pooling of private capital in India. Regulated under the SEBI (Alternative Investment Funds) Regulations, 2012, AIFs are classified into three distinct categories based on their investment strategy and regulatory impact.
 

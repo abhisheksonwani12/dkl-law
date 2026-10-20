@@ -10,7 +10,7 @@ export const  banners: Banner[] = [
         link: "/#expertise",
     },
     {
-        subtitle: "Regulatory Insight & Representation",
+        subtitle: "Regulatory Insight and Representation",
         title: "GUIDING THROUGH COMPLEXITY",
         description:
         "With proven experience in representing clients before Financial Regulators in India, and supported by our presence across Mumbai and Delhi, we are strategically equipped to provide end-to-end, commercially pragmatic, and institutionally informed regulatory and legal solutions to clients operating across diverse jurisdictions and sectors.",
@@ -18,7 +18,7 @@ export const  banners: Banner[] = [
     },
     {
         subtitle: "Client-Focused Counselling",
-        title: "STRATEGIC & PRACTICAL SOLUTIONS",
+        title: "STRATEGIC AND PRACTICAL SOLUTIONS",
         description:
         "We deliver practical, business-driven legal solutions, ensuring senior-level engagement, strategic foresight, and personalized service in every mandate.",
         link: "/#our-offices",

@@ -23,7 +23,7 @@ export default function Footer() {
   return (
     <footer
       className="relative text-[#c5cfe1] pt-16 pb-8 sm:pt-[72px] sm:pb-[42px] px-0 min-h-[380px] overflow-visible bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/bg-footer.png')", fontFamily: 'Times New Roman, Times, serif' }}
+      style={{ backgroundImage: "url('/bg-footer.webp')", fontFamily: 'Times New Roman, Times, serif' }}
     >
       <div className="relative z-10">
 
@@ -32,7 +32,7 @@ export default function Footer() {
           <div className="bg-white w-full h-full flex items-center justify-center">
             <a href="/" aria-label="Go to homepage" className="block w-full h-full">
               <img
-                src="/logo-w.png"
+                src="/logo-w.webp"
                 alt="DKL Advocates"
                 className="object-contain w-[90%] h-auto mx-auto z-100"
               />
@@ -101,7 +101,7 @@ export default function Footer() {
               ${openSections.legal ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0 md:max-h-96 md:opacity-100 md:mt-0'}`}
             >
               <a href="/privacy-policy" className="hover:text-white block">Privacy Policy</a>
-              <a href="#" className="hover:text-white block">Terms of Use</a>
+              <a href="/privacy-policy" className="hover:text-white block">Terms of Use</a>
             </div>
           </div>
 

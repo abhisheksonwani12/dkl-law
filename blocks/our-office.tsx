@@ -53,7 +53,7 @@ const Office: React.FC = () => {
   const activeStates = Object.keys(offices);
 
   return (
-    <div id="our-offices" className="min-h-auto lg:min-h-screen bg-[url('/bg-office.png')] bg-cover bg-center bg-no-repeat text-slate-900 flex flex-col font-sans overflow-hidden mt-14">
+    <div id="our-offices" className="min-h-auto lg:min-h-screen bg-[url('/bg-office.webp')] bg-cover bg-center bg-no-repeat text-slate-900 flex flex-col font-sans overflow-x-clip mt-14">
       
       <div className="flex items-center w-2/3 md:w-1/3 max-w-[500px] mb-4 mt-10 relative">
         <div className="flex-1 h-0.5 bg-[#9c0101]" />

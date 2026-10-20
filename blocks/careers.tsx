@@ -4,7 +4,7 @@ export default function Career() {
     <section
       id="internship"
       className="relative p-0 md:p-0 m-0 box-border bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/bg-career.png')" }}
+      style={{ backgroundImage: "url('/bg-career.webp')" }}
     >
 
       <div className="relative z-10 flex flex-col md:flex-row gap-6 md:gap-0 w-full min-h-[450px] p-0 m-0">

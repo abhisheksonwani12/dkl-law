@@ -19,7 +19,7 @@ export default function HomePage() {
       
       <div
         className="relative bg-fixed bg-center bg-cover"
-        style={{ backgroundImage: "url('/bg-resources.png')" }}
+        style={{ backgroundImage: "url('/bg-resources.webp')" }}
       >
 
         <div className="flex flex-col items-center gap-1 mt-12 mb-6 " style={{ fontFamily: 'Times New Roman, Times, serif' }}>
@@ -64,7 +64,7 @@ export default function HomePage() {
             <div className="absolute top-0 left-0 right-0 h-1.5 bg-[#9c0101]" />
 
             <div className="inline-flex items-center gap-2 px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-[#9c0101] border border-[#9c0101]/30 bg-[#9c0101]/5 font-serif font-semibold mb-6">
-              Legal Insights & Publications
+              Legal Insights and Publications
             </div>
 
             <h3 className="text-3xl sm:text-4xl md:text-5xl font-serif text-[#111f2d] font-normal tracking-wide mb-4" style={{ fontFamily: 'Times New Roman, Times, serif' }}>

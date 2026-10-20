@@ -53,12 +53,12 @@ export default function Disclaimer(){
                 <div className="relative w-[95%] max-w-2xl bg-white p-4 pt-12 md:p-8 md:pt-14 shadow-2xl animate-in fade-in zoom-in border border-gray-200 rounded-lg max-h-[90vh] overflow-y-auto">
                   <div className="absolute top-4 left-4">
                     <img
-                      src="/logo.png"
+                      src="/logo.webp"
                       alt="DKL Advocates Logo"
                       className="h-8 md:h-10 w-auto object-contain"
                       />
                   </div>
-                  <h2 className="text-lg md:text-2xl font-semibold mb-3 md:mb-4 text-center">DISCLAIMER & CONFIRMATION</h2>
+                  <h2 className="text-lg md:text-2xl font-semibold mb-3 md:mb-4 text-center">DISCLAIMER AND CONFIRMATION</h2>
                   <div className="text-xs md:text-sm text-muted-foreground leading-relaxed mb-4 md:mb-5 text-justify">
                     This website contains general information about DKL ADVOCATES and is not
                     intended to serve as a source of legal advice for any purpose.
@@ -131,7 +131,7 @@ export default function Disclaimer(){
           </>
         )}
 
-          {/* Privacy Policy & Disclaimer Popup Panel */}
+          {/* Privacy Policy and Disclaimer Popup Panel */}
           {showPrivacyPanel && (
             <div className="fixed inset-0 z-10000 flex items-center justify-center bg-black/70 backdrop-blur-sm">
               <div className="relative w-[95%] max-w-3xl bg-white p-6 md:p-8 shadow-2xl border border-gray-200 rounded-lg max-h-[90vh] overflow-y-auto">

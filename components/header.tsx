@@ -8,7 +8,7 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   return (
-    <header className="w-full bg-white sticky top-0" style={{ fontFamily: 'Times New Roman, Times, serif' }}>
+    <header className="w-full bg-white" style={{ fontFamily: 'Times New Roman, Times, serif' }}>
 
       <div className="flex flex-col">
 
@@ -19,7 +19,7 @@ const Header: React.FC = () => {
           <div className="flex justify-start items-start md:items-center max-w-full ml-2 mb-2 md:mb-0">
             <a href="/" aria-label="Go to Home">
               <img
-                src="/logo-w.png"
+                src="/logo-w.webp"
                 alt="Law Firm Logo"
                 className="w-36 md:w-48 h-auto object-contain cursor-pointer"
               />
@@ -32,7 +32,7 @@ const Header: React.FC = () => {
               <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 mt-2 md:mt-[78px] md:ml-5 text-[#9c0101]">
                 <div className="flex items-center">
                   <Phone size={18} className="mr-2" />
-                  <a href="tel:+911112345678" className="text-black text-base font-bold hover:underline">
+                  <a href="tel:+911161289119" className="text-black text-base font-bold hover:underline">
                     Delhi: +91 11 6128 9119 
                   </a>
                 </div>
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="mr-2">
                   <path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.37 5.06L2 22l5.09-1.34A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.66 0-3.2-.5-4.49-1.35l-.32-.2-3.02.8.81-2.95-.21-.33A7.94 7.94 0 014 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.2-5.28c-.23-.12-1.36-.67-1.57-.75-.21-.08-.37-.12-.52.12-.16.23-.6.75-.74.9-.14.16-.27.18-.5.06-.23-.12-.98-.36-1.86-1.15-.69-.61-1.15-1.37-1.29-1.6-.14-.23-.02-.36.1-.48.11-.11.23-.27.35-.4.12-.14.16-.23.24-.39.08-.16.04-.3-.02-.42-.06-.12-.52-1.25-.71-1.71-.19-.46-.38-.39-.52-.4h-.44c-.14 0-.37.05-.56.27-.19.23-.74.73-.74 1.78s.76 2.06.87 2.2c.12.14 1.63 2.49 3.95 3.49.55.24.98.38 1.32.49.55.17 1.05.15 1.45.09.44-.07 1.36-.55 1.55-1.09.19-.54.19-1 .14-1.09-.05-.09-.21-.14-.44-.26z"/>
                 </svg>
-                <a href="https://wa.me/919920909031?text=Hello%2C%20I%20need%20assistance%20regarding%20a%20legal%20matter.%20Please%20advise." target="_blank" rel="noopener noreferrer" className="text-black text-base font-bold hover:underline">
+                <a href="https://wa.me/919920909031?text=Greetings%2C%20I%20would%20like%20to%20schedule%20an%20appointment%20to%20discuss%20a%20legal%20engagement%20with%20DKL%20Advocates.%20Please%20advise%20on%20your%20schedule." target="_blank" rel="noopener noreferrer" className="text-black text-base font-bold hover:underline">
                   WhatsApp: +91 99209 09031
                 </a>
               </div>
