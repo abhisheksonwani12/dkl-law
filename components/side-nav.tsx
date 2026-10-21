@@ -127,18 +127,18 @@ export default function SideNav() {
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="fixed right-0 top-1/3 -translate-y-1/2 bg-white w-[130px] hover:w-[220px] transition-all duration-300 z-50 overflow-hidden border border-[#9c0101] border-r-0 shadow-lg rounded-l-md hidden md:block"
+      className="fixed right-0 top-1/3 -translate-y-1/2 bg-white w-[175px] hover:w-[230px] transition-all duration-300 z-50 overflow-hidden border border-[#9c0101] border-r-0 shadow-lg rounded-l-md hidden md:block"
       style={{ fontFamily: "Times New Roman, Times, serif" }}
     >
       {/* Collapsed State: Shows the current active section name with indicator */}
       {!hovered && (
         <Link
           href={activeItem.path}
-          className="flex items-center justify-between px-3.5 py-4 text-[#9c0101] text-[1rem] font-bold whitespace-nowrap border-l-4 border-l-[#9c0101] hover:bg-[#9c0101]/5 transition-colors"
+          className="flex items-center justify-between px-4 py-3.5 text-[#9c0101] text-[1rem] font-bold whitespace-nowrap border-l-4 border-l-[#9c0101] hover:bg-[#9c0101]/5 transition-colors"
           title={`Active Page: ${activeItem.name}`}
         >
-          <span className="truncate">{activeItem.name}</span>
-          <span className="text-[10px] ml-1 text-[#9c0101]/60">◀</span>
+          <span className="whitespace-nowrap">{activeItem.name}</span>
+          <span className="text-[10px] ml-2 text-[#9c0101]/60 shrink-0">◀</span>
         </Link>
       )}
 
