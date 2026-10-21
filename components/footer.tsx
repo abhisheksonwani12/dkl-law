@@ -57,9 +57,9 @@ export default function Footer() {
             <div className={`grid gap-y-2 gap-x-4 text-[14px] sm:text-[15.3px] transition-all duration-300 overflow-hidden 
               ${openSections.quickLinks ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0 md:max-h-96 md:opacity-100 md:mt-0'}`}
             >
-              <a href="/#" className="hover:text-white">Home</a>
+              <a href="/#home" className="hover:text-white">Home</a>
               <a href="/#about" className="hover:text-white">Who We Are</a>
-              <a href="/#practice-areas" className="hover:text-white">Practice Areas</a>
+              <a href="/#expertise" className="hover:text-white">Practice Areas</a>
               <a href="/#our-team" className="hover:text-white">Our Team</a>
               <a href="/#our-offices" className="hover:text-white">Our Offices</a>
               <a href="/#resources" className="hover:text-white">Resources</a>
