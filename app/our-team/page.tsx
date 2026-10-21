@@ -61,7 +61,7 @@ export default function PeoplePage() {
               }
               className="w-full border border-[#9c0101] px-4 py-2 text-sm font-semibold font-['Times_New_Roman'] bg-white text-[#001021] focus:outline-none"
             >
-              <option value="core">Core Team</option>
+              <option value="core">Advocates</option>
               <option value="advisory">Advisory Board</option>
               <option value="management">Management</option>
             </select>
@@ -77,7 +77,7 @@ export default function PeoplePage() {
                   : 'bg-white text-[#001021] border-[#9c0101] hover:bg-[#9c0101] hover:text-white'
               }`}
             >
-              Core Team
+              Advocates
             </button>
 
             <button

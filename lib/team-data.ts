@@ -131,7 +131,7 @@ const teamMembers: Record<string, TeamMember> = {
     location: 'Mumbai',
     practiceArea: 'Intellectual Property',
     sector: 'Media',
-    education: ['BBA LL.B. (Hons.), Amity University, Kolkata', 'LL.M, Comparative and International Dispute Resolution, Queen Mary University of London'],
+    education: ['B.B.A LL.B., Amity University, Kolkata', 'LL.M, Comparative and International Dispute Resolution, Queen Mary University of London'],
     bio: 'Focuses on intellectual property law protecting creative assets and digital innovation across media industries.',
     quote: 'Innovation deserves robust protection.',
     testimonial: 'Insightful IP strategist.',

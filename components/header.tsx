@@ -1,11 +1,17 @@
 "use client";
 
 import React, { useState } from "react";
+import { usePathname } from "next/navigation";
 import { Phone, Menu } from "lucide-react";
 
 const Header: React.FC = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isTeamActive = pathname?.startsWith('/our-team') || pathname?.startsWith('/people');
+  const isPracticeActive = pathname?.startsWith('/practice-areas');
+  const isResourcesActive = pathname?.startsWith('/resources') || pathname?.startsWith('/articles') || pathname?.startsWith('/blog');
   
   return (
     <header className="w-full bg-white" style={{ fontFamily: 'Times New Roman, Times, serif' }}>
@@ -74,17 +80,53 @@ const Header: React.FC = () => {
             <Menu size={28} />
           </button>
           <div className="hidden md:flex items-center gap-2 flex-1">
-            <a href="/#" className="text-[#001021] font-semibold mr-4 text-sm relative after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full">HOME</a>
-              <span className="text-[#9c0101] text-md mr-4">&#9670;</span>
-            <a href="/#about" className="text-[#001021] font-semibold mr-4 text-sm relative after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full">WHO WE ARE</a>
-              <span className="text-[#9c0101] text-md mr-4">&#9670;</span>
-            <a href="/#expertise" className="text-[#001021] font-semibold mr-4 text-sm relative after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full">PRACTICE AREAS</a>
-              <span className="text-[#9c0101] text-md mr-4">&#9670;</span>
-              <a href="/#our-team" className="text-[#001021] font-semibold mr-4 text-sm relative after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full">OUR TEAM</a>
+            <a
+              href="/#"
+              className="text-[#001021] font-semibold mr-4 text-sm relative after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full"
+            >
+              HOME
+            </a>
             <span className="text-[#9c0101] text-md mr-4">&#9670;</span>
-              <a href="/#our-offices" className="text-[#001021] font-semibold mr-4 text-sm relative after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full">OUR OFFICES</a>
+            <a
+              href="/#about"
+              className="text-[#001021] font-semibold mr-4 text-sm relative after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full"
+            >
+              WHO WE ARE
+            </a>
             <span className="text-[#9c0101] text-md mr-4">&#9670;</span>
-              <a href="/#resources" className="text-[#001021] font-semibold mr-4 text-sm relative after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full">RESOURCES</a>
+            <a
+              href="/#expertise"
+              className={`font-semibold mr-4 text-sm relative after:absolute after:left-0 after:-bottom-0.5 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full ${
+                isPracticeActive ? "text-[#9c0101] after:w-full" : "text-[#001021] after:w-0"
+              }`}
+            >
+              PRACTICE AREAS
+            </a>
+            <span className="text-[#9c0101] text-md mr-4">&#9670;</span>
+            <a
+              href="/#our-team"
+              className={`font-semibold mr-4 text-sm relative after:absolute after:left-0 after:-bottom-0.5 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full ${
+                isTeamActive ? "text-[#9c0101] after:w-full" : "text-[#001021] after:w-0"
+              }`}
+            >
+              OUR TEAM
+            </a>
+            <span className="text-[#9c0101] text-md mr-4">&#9670;</span>
+            <a
+              href="/#our-offices"
+              className="text-[#001021] font-semibold mr-4 text-sm relative after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full"
+            >
+              OUR OFFICES
+            </a>
+            <span className="text-[#9c0101] text-md mr-4">&#9670;</span>
+            <a
+              href="/#resources"
+              className={`font-semibold mr-4 text-sm relative after:absolute after:left-0 after:-bottom-0.5 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full ${
+                isResourcesActive ? "text-[#9c0101] after:w-full" : "text-[#001021] after:w-0"
+              }`}
+            >
+              RESOURCES
+            </a>
 
             {/* LinkedIn at end of nav */}
             <div className="hidden md:flex items-center pl-2 text-blue-500">
@@ -111,27 +153,51 @@ const Header: React.FC = () => {
 
         {isMenuOpen && (
           <div className="flex flex-col bg-white border-t border-[#9c0101] px-6 py-4 space-y-3 md:hidden">
-            <a href="/#" className="text-[#001021] font-semibold text-sm relative after:absolute after:left-0 after:bottom-0.5 after:w-0 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full">
+            <a
+              href="/#"
+              className="text-[#001021] font-semibold text-sm relative after:absolute after:left-0 after:bottom-0.5 after:w-0 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full"
+            >
               HOME
             </a>
 
-            <a href="/#about" className="text-[#001021] font-semibold text-sm relative after:absolute after:left-0 after:bottom-0.5 after:w-0 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full">
+            <a
+              href="/#about"
+              className="text-[#001021] font-semibold text-sm relative after:absolute after:left-0 after:bottom-0.5 after:w-0 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full"
+            >
               WHO WE ARE
             </a>
 
-            <a href="/#expertise" className="text-[#001021] font-semibold text-sm relative after:absolute after:left-0 after:bottom-0.5 after:w-0 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full">
+            <a
+              href="/#expertise"
+              className={`font-semibold text-sm relative after:absolute after:left-0 after:bottom-0.5 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full ${
+                isPracticeActive ? "text-[#9c0101] after:w-full" : "text-[#001021] after:w-0"
+              }`}
+            >
               PRACTICE AREAS
             </a>
             
-            <a href="/#our-team" className="text-[#001021] font-semibold text-sm relative after:absolute after:left-0 after:bottom-0.5 after:w-0 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full">
+            <a
+              href="/#our-team"
+              className={`font-semibold text-sm relative after:absolute after:left-0 after:bottom-0.5 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full ${
+                isTeamActive ? "text-[#9c0101] after:w-full" : "text-[#001021] after:w-0"
+              }`}
+            >
               OUR TEAM
             </a>
 
-            <a href="/#our-offices" className="text-[#001021] font-semibold text-sm relative after:absolute after:left-0 after:bottom-0.5 after:w-0 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full">
+            <a
+              href="/#our-offices"
+              className="text-[#001021] font-semibold text-sm relative after:absolute after:left-0 after:bottom-0.5 after:w-0 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full"
+            >
               OUR OFFICES
             </a>
 
-            <a href="/#resources" className="text-[#001021] font-semibold text-sm relative after:absolute after:left-0 after:bottom-0.5 after:w-0 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full">
+            <a
+              href="/#resources"
+              className={`font-semibold text-sm relative after:absolute after:left-0 after:bottom-0.5 after:h-0.5 after:bg-[#9c0101] after:transition-all after:duration-300 hover:after:w-full ${
+                isResourcesActive ? "text-[#9c0101] after:w-full" : "text-[#001021] after:w-0"
+              }`}
+            >
               RESOURCES
             </a>
 
